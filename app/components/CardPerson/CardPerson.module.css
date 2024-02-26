@@ -1,0 +1,107 @@
+.card {
+    background-color: var(--background-dark);
+    border: 1px solid var(--secondary-neon);
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.imageContainer {
+    display: flex;
+    margin:2rem;
+}
+
+.image {
+    flex: 1;
+    position: relative;
+}
+
+.image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius:1000px;
+}
+
+.details {
+    flex: 1;
+    padding: 16px;
+    box-sizing: border-box;
+}
+
+.name {
+    margin: 0;
+    font-size: 24px;
+    color: var(--primary-neon);
+}
+
+.description {
+    margin: 8px 0;
+    color: var(--pink-neon);
+}
+
+.section {
+    margin: 16px;
+}
+
+.sectionTitle {
+    border-bottom: 1px solid var(--secondary-neon);
+    padding: 8px;
+}
+
+.title {
+    margin: 0;
+    font-size: 18px;
+    color: var(--light-blue-neon);
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+
+.sectionContent {
+    padding: 8px;
+}
+
+.list {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.listItem {
+    flex: 1;
+    margin: 8px;
+    padding: 16px;
+    border: 1px solid var(--secondary-neon);
+    border-radius: 8px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: var(--background-dark);
+}
+
+.listProjects {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.listItemProject {
+    flex: 1;
+    margin: 8px;
+    padding: 16px;
+    border: 1px solid var(--secondary-neon);
+    border-radius: 8px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: var(--background-dark);
+}
+
+.listItem p,
+.listItemProject p {
+    color: #fff; /* White text color */
+}
