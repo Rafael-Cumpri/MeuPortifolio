@@ -7,19 +7,21 @@
 
 .imageContainer {
     display: flex;
-    margin:2rem;
+    margin: 2rem;
 }
 
 .image {
     flex: 1;
     position: relative;
+    border-radius: 50%;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Adiciona sombra à imagem */
 }
 
 .image img {
     width: 100%;
     height: 100%;
     object-fit: cover;
-    border-radius:1000px;
+    border-radius: 50%;
 }
 
 .details {
@@ -31,12 +33,12 @@
 .name {
     margin: 0;
     font-size: 24px;
-    color: var(--primary-neon);
+    color: var(--secondary-neon);
 }
 
 .description {
     margin: 8px 0;
-    color: var(--pink-neon);
+    color: var(--background-white);
 }
 
 .section {
@@ -51,10 +53,10 @@
 .title {
     margin: 0;
     font-size: 18px;
-    color: var(--light-blue-neon);
+    color: var(--secondary-neon);
+    display: flex;
     align-items: center;
     justify-content: center;
-    display: flex;
 }
 
 .sectionContent {
@@ -80,6 +82,12 @@
     flex-direction: column;
     align-items: center;
     background-color: var(--background-dark);
+    color: var(--background-white);
+    transition: transform 0.2s ease-in-out; /* Adiciona transição suave ao passar o mouse */
+}
+
+.listItem:hover {
+    transform: scale(1.05); /* Aumenta ligeiramente o tamanho ao passar o mouse */
 }
 
 .listProjects {
@@ -99,9 +107,10 @@
     flex-direction: column;
     align-items: center;
     background-color: var(--background-dark);
+    color: var(--background-white);
+    transition: transform 0.2s ease-in-out; /* Adiciona transição suave ao passar o mouse */
 }
 
-.listItem p,
-.listItemProject p {
-    color: #fff; /* White text color */
+.listItemProject:hover {
+    transform: scale(1.05); /* Aumenta ligeiramente o tamanho ao passar o mouse */
 }
